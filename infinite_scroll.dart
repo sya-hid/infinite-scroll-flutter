@@ -68,10 +68,6 @@ class _InfiniteScrollPageState extends State<InfiniteScrollPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text('Infinite Scroll'),
-      ),
       body: _isLoading || _data.isEmpty
           ? Skeletonizer(
               effect: ShimmerEffect(
