@@ -79,10 +79,6 @@ class _InfiniteScrollWithFuturePageState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text('Inifnite Scroll with Future'),
-      ),
       body: FutureBuilder<List<dynamic>>(
         future: fetchNews(_page),
         builder: (context, snapshot) {
