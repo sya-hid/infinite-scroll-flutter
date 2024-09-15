@@ -9,22 +9,8 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Search Delegate Infinite Scroll'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              showSearch(
-                context: context,
-                delegate: SearchDelegate1(context),
-              );
-            },
-          )
-        ],
-      ),
-      body: const Center(
+    return const Scaffold(
+      body: Center(
         child: Text('Body'),
       ),
     );
